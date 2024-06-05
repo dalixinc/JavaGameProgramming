@@ -24,7 +24,7 @@ public class ActiveRenderingExample extends JFrame implements Runnable {
 
         Canvas canvas = new Canvas();
         canvas.setSize( 320, 240 );
-        canvas.setBackground( Color.BLACK );
+        canvas.setBackground( Color.BLUE );
         canvas.setIgnoreRepaint( true );
         getContentPane().add( canvas );
         setTitle( "Active Rendering" );
@@ -75,6 +75,7 @@ public class ActiveRenderingExample extends JFrame implements Runnable {
         try {
             running = false;
             gameThread.join();
+            System.out.println("Stopped!!! - by closing Window");
         } catch( InterruptedException e ) {
             e.printStackTrace();
         }
