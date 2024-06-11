@@ -33,7 +33,7 @@ public class HelloWorldApp extends JFrame {
             super.paint( g );
             onPaint( g );
             System.out.println(count++ );
-            g = null;
+            // g = null; -- no effect
         }
     }
 
@@ -46,10 +46,6 @@ public class HelloWorldApp extends JFrame {
 
     public static void main( String[] args ) {
         final HelloWorldApp app = new HelloWorldApp();
-        SwingUtilities.invokeLater( new Runnable() {
-            public void run() {
-                app.createAndShowGUI();
-            }
-        });
+        SwingUtilities.invokeLater(() -> app.createAndShowGUI());
     }
 }

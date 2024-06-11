@@ -34,15 +34,19 @@ public class RenderThreadExample extends JFrame implements Runnable {
     private void sleep( long sleep ) {
         try {
             Thread.sleep( sleep );
-        } catch( InterruptedException ex ) { }
+        } catch( InterruptedException ex ) {
+            ex.printStackTrace();   // Bad to do nothing in a catchg block
+        }
     }
 
     protected void onWindowClosing() {
         try {
+            long startTime = System.currentTimeMillis();
             System.out.println( "Stopping Thread..." );
             running = false;
             gameThread.join();
-            System.out.println( "Stopped!!!" );
+            long timeTaken = System.currentTimeMillis() - startTime;
+            System.out.println( "Stopped!!! -  " + timeTaken + "ms  -  " + Thread.currentThread().getName() );
         } catch( InterruptedException e ) {
             e.printStackTrace();
         }
