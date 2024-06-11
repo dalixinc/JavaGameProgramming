@@ -1,0 +1,500 @@
+   46  git merge --no-ffd feature
+   47  git merge --no-ff feature
+   48   git log --oneline --graph --decorate --all
+   49  exit
+   50  VBoxManage internalcommands sethduuid "D:\VirtualBoxVMs\HP05082020\LANA04082020.VHD"
+   51  git --version
+   52  git status
+   53  git log
+   54  git config --global --list
+   55  git --config --global --list
+   56  git config
+   57  git config --list
+   58  git config --local --list
+   59  git config --system --list
+   60  git config --global --list
+   61  git config --system --edit
+   62  git config --local --edit
+   63  git config --system --edit
+   64  git config --global user.name DaleBehemoth
+   65  git config --global user.email doofusmccaskill@gotmail.com
+   66  git config --global --list
+   67  git log --oneline --graph --decorate --all
+   68  git show 5f78c6
+   69  git show --pretty="" --name-only 5f78c6
+   70  git diff-tree --no-commit-id --name-only  5f78c6
+   71  git diff-tree --no-commit-id --name-only  -r 5f78c6
+   72  git diff-tree  5f78c6
+   73  git diff-tree  --name-only  -r 5f78c6
+   74  exit
+   75  ./start.sh 
+   76  cd ..
+   77  ./maven-tools/start.sh simple
+   78  mkdir -p training/maven/quick
+   79  cd  training/maven/quick
+   80  cd simple/src/main/java/
+   81  ls
+   82  cd ../../../../../..
+   83  cd JasonTaylorMavenCrashCourse/projects/
+   84  ls
+   85  ./maven-tools/start.sh words
+   86  mkdir -p training/maven/quick
+   87  cd ./words/src/
+   88  ls
+   89  cd test/java/
+   90  ls
+   91  mkdie -p training/maven/quick
+   92  mkdir -p training/maven/quick
+   93  cd training/maven/quick
+   94  mvn version
+   95  mvn --version
+   96  mvn clean
+   97  mvn package
+   98  mvn clean
+   99  mvn clean
+  100  mvn package
+  101  mvn clean
+  102  mvn test
+  103  mvn package
+  104  exit
+  105  pwd
+  106  ls
+  107  tail -l100 f
+  108  tail --help
+  109  tail -20f SimpleHighLow.log 
+  110  tail -20f SimpleHighLow.log 
+  111  tail -20f SimpleHighLow.log 
+  112  exit
+  113  git status
+  114  git status
+  115  git rm --cached target/
+  116  git rm --cached -r target/
+  117  git status
+  118  git status
+  119  git log
+  120  git status
+  121  git status
+  122  git status
+  123  git log
+  124  git remote -v
+  125  git log
+  126  git status
+  127  git diff
+  128  git diff
+  129  git status
+  130  git status
+  131  git status
+  132  git add -A
+  133  git status
+  134  git status
+  135  git log
+  136  git show 2e95ac
+  137  git show --name-only 2e95ac
+  138  git status
+  139  git commit -m "Add .gitignore to repo"
+  140  git status
+  141  git log
+  142  git log
+  143  git status
+  144  git status
+  145  git status
+  146  git diff
+  147  git status
+  148  git diff --cached
+  149  git status
+  150  git diff --cached
+  151  git status
+  152  git diff --cached
+  153  git log --oneline --graph --decorate --all
+  154  git status
+  155  git status
+  156  git status
+  157  git log --oneline --graph --decorate --all
+  158  git status
+  159  git status
+  160  git status
+  161  git status
+  162  git status
+  163  git diff
+  164  git status
+  165  git diff --cached
+  166  git diff
+  167  git diff --staged
+  168  git diff HEAD
+  169  git status
+  170  git status
+  171  git log --oneline --graph --decorate --all
+  172  git log --oneline --graph --decorate --all
+  173  git status
+  174  git status
+  175  git status
+  176  mvn --version
+  177  vi ~/.bashrc
+  178  vi ~/.bashrc
+  179  vi ~/.bashrc
+  180  vi ~/.bashrc
+  181  less ~/.bashrc
+  182  less ~/.*
+  183  less ~/.
+  184  ls -la ~/.*
+  185  ls -la ~/.
+  186  ls -la ~/
+  187  history 
+  188  npp
+  189  source ~/.bashrc 
+  190  npp
+  191  git ls-files
+  192  git status
+  193  git log --oneline --graph --decorate --all
+  194  git cat-file -t 7d114e3
+  195  git cat-file -s 7d114e3
+  196  git cat-file -h 7d114e3
+  197  git cat-file -p 7d114e3
+  198  git status
+  199  git log --oneline --graph --decorate --all
+  200  git log --oneline --decorate --all
+  201  git log --oneline --graph --decorate --all
+  202  git config --global alias.lg "log --oneline --graph --decorate --all"
+  203  git config --global --list
+  204  git config --global --edit
+  205  nano
+  206  git config --global core.editor "nano"
+  207  git config --global --list
+  208  git config --global --edit
+  209  git remote --help
+  210  git remote
+  211  git remote -r
+  212  git remote -v
+  213  git branch
+  214  git branch -a
+  215  git branch --help
+  216  git branch gorpal
+  217  git log --oneline --graph --decorate --all
+  218  git branch -a
+  219  git branch -d gorpal
+  220  git log --oneline --graph --decorate --all
+  221  git diff HEAD HEAD^
+  222  git diff HEAD HEAD^
+  223  git diff HEAD^ HEAD^
+  224  git diff HEAD^ HEAD
+  225  git diff HEAD^^ HEAD
+  226  git diff HEAD^^^ HEAD
+  227  git diff HEAD~1 HEAD
+  228  git diff HEAD^^^ HEAD 
+  229  git diff HEAD^^^ HEAD  -- logback.xml
+  230  git diff HEAD^^ HEAD  -- logback.xml
+  231  git diff -- logback.xml
+  232  git diff
+  233  git log --oneline --graph --decorate --all
+  234  git diff HEAD^ HEAD
+  235  git diff HEAD^ HEAD -- pom.xml
+  236  git diff HEAD^^ HEAD -- pom.xml
+  237  git diff HEAD^^ HEAD
+  238  git diff HEAD^^ HEAD -- logback.xml
+  239  git diff HEAD^^ HEAD -- pom.xml
+  240  git diff HEAD^^^ HEAD -- logback.xml
+  241  git reflog
+  242  git status
+  243  git log --oneline --graph --decorate --all
+  244  git branch -v
+  245  git branch -a
+  246  git log --oneline --graph --decorate --all
+  247  git status
+  248  git log --oneline --graph --decorate --all
+  249  git diff
+  250  git status
+  251  git diff HEAD
+  252  git diff --staged HEAD
+  253  git status
+  254  git checkout -b simple-text-version1
+  255  git log --oneline --graph --decorate --all
+  256  git status
+  257  git status
+  258  git log --oneline --graph --decorate --all
+  259  git push -u origin
+  260  git push
+  261   git push --set-upstream origin simple-text-version1
+  262  git log --oneline --graph --decorate --all
+  263  git checkout master
+  264  git merge
+  265  git merge simple-text-version
+  266  git checkout simple-text-version
+  267  git merge simple-text-version1
+  268  git log --oneline --graph --decorate --all
+  269  git push origin master
+  270  git log --oneline --graph --decorate --all
+  271  git checkout simple-text-version1
+  272  git list-files
+  273  git ls-files
+  274  git status
+  275  git restore --staged 
+  276  git restore --staged src/main/java/com/daleman/highlow/game/TextHighLowGame1.java
+  277  git status
+  278  git log --oneline --graph --decorate --all
+  279  git log --oneline --graph --decorate --all
+  280  git log --oneline --graph --decorate --all
+  281  git log --oneline --graph --decorate --all
+  282  git log --oneline --graph --decorate --all
+  283  git log --oneline --graph --decorate --all
+  284  git checkout master
+  285  git merge simple-text-version1
+  286  git log --oneline --graph --decorate --all
+  287  git push -u origin
+  288  git checkout simple-text-version1
+  289  git status
+  290  git status
+  291  exit
+  292  git clone https://github.com/mikepound/tls-exercises
+  293  git clone https://github.com/dalehome/cool-scripts2020.git
+  294  git --version
+  295  ls -la
+  296  git clone git@github.com:dalehome/chen-git-collab.git
+  297  git clone https://github.com/dalehome/chen-git-collab.git
+  298  cd chen-git-collab/
+  299  ls -la
+  300  ls -la
+  301  cals
+  302  ls
+  303  ls -la
+  304  git status
+  305  cat .gitignore 
+  306  git status
+  307  git status
+  308  ls
+  309  ls -la
+  310  nano README.md 
+  311  nano README.md 
+  312  git push origin main
+  313  ssh-keygen
+  314  clip > /C/Users/doofu/.ssh/id_rsa.pub 
+  315  clip < /C/Users/doofu/.ssh/id_rsa.pub 
+  316  clip < /C/Users/doofu/.ssh/id_rsa.pub 
+  317  cat /C/Users/doofu/.ssh/id_rsa.pub 
+  318  ssh-keygen
+  319  clip < /C/Users/doofu/.ssh/id_rsa.pub 
+  320  git push origin main
+  321  eval "$(ssh-agent -s)"
+  322   ssh-add /C/Users/doofu/.ssh/id_rsa.pub
+  323  git push origin main
+  324   ssh-add /C/Users/doofu/.ssh/id_rsa.pub
+  325   ssh-keygen -t ed25519 -C "dale_macdonald@hotmail.com"
+  326  git push origin main
+  327  eval "$(ssh-agent -s)"
+  328  ssh-add /C/Users/doofu/.ssh/id_ed25519
+  329  git push origin main
+  330  git clone git@github.com:dalehome/chen-git-collab.git
+  331  git push origin main
+  332  ps
+  333  history -a
+  334  cd c:\Users
+  335  cd doofu/
+  336  cd IdeaProjects/
+  337  cd WorkTimeRecorder/
+  338  git log --all --decorate --graph --oneline
+  339  git status
+  340  git config --global list
+  341  git config --global --list
+  342  git lg
+  343  git alias --help
+  344  git --help
+  345  git st
+  346  git config --global alias.st 'status -sb'
+  347  git config --global --list
+  348  git status
+  349  git st
+  350  history > hist_180220923.txt
+  351  git st
+  352  less hist_180220923.txt 
+  353  less hist_180220923.txt | grep -i ssh
+  354   ssh-keygen -t ed25519 -C "dalixinc@gmail.com"
+  355   ssh-keygen -t ed25519 -C "dalixinc@gmail.com"
+  356  git st
+  357   ssh-keygen -t ed25519 -C "dalixinc@gmail.com"
+  358  less hist_180220923.txt | grep -i ssh
+  359  ssh-keygen
+  360  clip < /c/Users/doofu/.ssh/id_dalixinc_ed25519
+  361  clip < /c/Users/doofu/.ssh/id_dalixinc_ed25519.pub
+  362  clip < /c/Users/doofu/.ssh/id_dalixinc_rsa
+  363  clip < /c/Users/doofu/.ssh/id_dalixinc_rsa.pub
+  364  clip < /c/Users/doofu/.ssh/id_dalixinc_ed25519.ppk
+  365  history > hist_180220923b.txt
+  366  git lg
+  367  git st
+  368  git st
+  369  git lg
+  370  git lg
+  371  git show bd1ea2
+  372  git show --help
+  373  git show
+  374  git show git lg
+  375  git lg
+  376  git branch
+  377  git branch -a
+  378  git lg
+  379  git st
+  380  git status
+  381  git status
+  382  git status
+  383  git status
+  384  git status
+  385  git lg
+  386  git lg
+  387  histort -a
+  388  history -a
+  389  git clone https://github.com/dalixinc/musician-app.git
+  390  ls
+  391  cd musician-app/
+  392  ls
+  393  node app.js
+  394  ls -la
+  395  git status
+  396  git init
+  397  git status
+  398  git remote
+  399  git remote -a
+  400  git remote -v
+  401  git remote add origin https://github.com/dalixinc/node-bp-test.git
+  402  git remote -v
+  403  git status
+  404  git add .
+  405  git status
+  406  git commit -m "Initial Commit"
+  407  git status
+  408  git log
+  409  git lg
+  410  git puush -u origin master
+  411  git push -u origin master
+  412  node app.js 
+  413  node app.js 
+  414  git status
+  415  git commit -a -m "Newer index.html"
+  416  git status
+  417  git log
+  418  git lg
+  419  git push -u origin master
+  420  git lg
+  421  git status
+  422  git status
+  423  git lg
+  424  git lg
+  425  node app.js
+  426  history --help
+  427  history -a
+  428  ls -la
+  429  websw
+  430  ls -la
+  431  less  'webswing&admin.bat'
+  432   'webswing&admin.bat' > crashWTR2.log 
+  433   ./'webswing&admin.bat' > crashWTR2.log 
+  434   ./'webswing&admin.bat' > crashWTR2.log 
+  435   ./'webswing&admin.bat' > crashWTR2.log 
+  436  git init
+  437  git status
+  438  git remote add origin https://github.com/dalixinc/test-bp.git
+  439  git remote
+  440  git remote-v
+  441  git remote -v
+  442  git remote -v
+  443  git push -u origin 
+  444  git push -u origin master
+  445  git push -u origin master
+  446  ls
+  447  git init
+  448  git remote add origin https://github.com/dalixinc/test-bp.git
+  449  git push -u origin master
+  450  git branch -M main
+  451  git push -u origin main
+  452  pit pull
+  453  git pull
+  454  git push -u origin main
+  455  git status
+  456  git add .
+  457  git status
+  458  git rm --cached index-good.html
+  459  git status
+  460  git commit -m  "Initial commit"
+  461  git status
+  462  git log
+  463  git push -u origin main
+  464  git log
+  465  git log
+  466  ls
+  467  git status
+  468  git status
+  469  git log
+  470  git lg
+  471  cd ..
+  472  ls
+  473  ls -la
+  474  cd nodejs-test-BP-dalix/
+  475  ls -la
+  476  git status
+  477  git init
+  478  git log
+  479  git status
+  480  git status
+  481  git add .
+  482  git status
+  483  git log
+  484  cd ..
+  485  ls -la
+  486  ls -la
+  487  cd  nodejs-test-BP-demo/
+  488  ls -la
+  489  node app.js 
+  490  node app.js
+  491  cd ..
+  492  cd
+  493  ls
+  494  pwd
+  495  ls
+  496  spring --version
+  497  curl -s "https://get.sdkman.io" | bash
+  498  git status
+  499  history 
+  500  git log --oneline --graph --decorate --all
+  501  git status
+  502  git diff .idea/misc.xml
+  503  git status
+  504  git log --oneline --graph --decorate --all
+  505  git log --oneline --graph --decorate --all
+  506  git status
+  507  git status
+  508  git status
+  509  git log --oneline --graph --decorate --all
+  510  git remote 
+  511  git remote -a
+  512  git remote -v
+  513  git remote add origin
+  514  git remote add origin https://github.com/dalixinc/JavaGameProgramming.git
+  515  git remote -v
+  516  git push origin main
+  517  git push origin -u master
+  518  git config credential.helper store
+  519  git push origin -u master
+  520  git push origin -delete main
+  521  git push origin --delete main
+  522  git reflog
+  523  git push origin -u
+  524  git pull
+  525  git status
+  526  dir
+  527  git push origin -u
+  528  git pull
+  529  git reflog
+  530  git pull --allow-unrelated-histories
+  531  git status
+  532  git status
+  533  git reflog
+  534  git pull --allow-unrelated-histories
+  535  git reflog
+  536  git remote -v
+  537  git log --oneline --graph --decorate --all
+  538  git push origin
+  539  git log --oneline --graph --decorate --all
+  540  echo %PATH%
+  541  echo $PATH
+  542  echo $PATH | grep -i cli
+  543  history 
+  544  history -a
+  545  history > hist06052024.txt

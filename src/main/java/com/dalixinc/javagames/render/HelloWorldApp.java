@@ -10,6 +10,8 @@ public class HelloWorldApp extends JFrame {
 
     private final FrameRate frameRate;
 
+    private static  long count = 0;
+
     public HelloWorldApp() {
         frameRate = new FrameRate();
     }
@@ -30,6 +32,8 @@ public class HelloWorldApp extends JFrame {
         public void paint( Graphics g ) {
             super.paint( g );
             onPaint( g );
+            System.out.println(count++ );
+            g = null;
         }
     }
 
