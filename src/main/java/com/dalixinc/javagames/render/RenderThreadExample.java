@@ -3,10 +3,16 @@ package com.dalixinc.javagames.render;
 import java.awt.event.*;
 import javax.swing.*;
 
-
+/**
+ *
+ * # 2
+ *
+ * This class is a simple example of a game loop running in a separate thread.
+ */
 public class RenderThreadExample extends JFrame implements Runnable {
 
     private volatile boolean running;
+    private int counter = 0;
     private Thread gameThread;
 
     public RenderThreadExample() {
@@ -20,13 +26,14 @@ public class RenderThreadExample extends JFrame implements Runnable {
         setVisible( true );
 
         gameThread = new Thread( this );
+        gameThread.setName( "Game Thread" );
         gameThread.start();
     }
 
     public void run() {
         running = true;
         while( running ) {
-            System.out.println( "Game Loop" );
+            System.out.println( "Game Loop - Count: " + counter++ );
             sleep( 10 );
         }
     }

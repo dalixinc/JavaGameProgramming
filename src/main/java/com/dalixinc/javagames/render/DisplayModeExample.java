@@ -5,7 +5,12 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-
+/**
+ * # 4
+ *
+ * This class is a simple demonstration of how to change the display mode of the screen.
+ *
+ */
 public class DisplayModeExample extends JFrame {
 
     class DisplayModeWrapper {

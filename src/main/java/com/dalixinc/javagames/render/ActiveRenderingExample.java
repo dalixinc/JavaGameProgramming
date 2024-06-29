@@ -8,7 +8,14 @@ import java.awt.image.*;
 import javax.swing.*;
 
 
-
+/**
+ *  # 3
+ *
+ * This is a simple example of a Java Swing application that displays a frame, using active rendering.
+ * We thus don't need to call repaint() in the game loop. - We are in control of the rendering.
+ * We use a BufferStrategy to manage the rendering process.
+ * We in fact actively tell Swing not to repaint the canvas by calling setIgnoreRepaint(true).
+ */
 public class ActiveRenderingExample extends JFrame implements Runnable {
 
     private FrameRate frameRate;
@@ -36,6 +43,7 @@ public class ActiveRenderingExample extends JFrame implements Runnable {
         bs = canvas.getBufferStrategy();
 
         gameThread = new Thread( this );
+        gameThread.setName( "Game Thread" );
         gameThread.start();
     }
 
@@ -67,15 +75,18 @@ public class ActiveRenderingExample extends JFrame implements Runnable {
 
     private void render( Graphics g ) {
         frameRate.calculate();
-        g.setColor( Color.GREEN );
+        g.setColor( Color.RED );
         g.drawString( frameRate.getFrameRate(), 30, 30 );
     }
 
     protected void onWindowClosing() {
         try {
+            long startTime = System.currentTimeMillis();
+            System.out.println( "Stopping Thread..." );
             running = false;
             gameThread.join();
-            System.out.println("Stopped!!! - by closing Window");
+            long timeTaken = System.currentTimeMillis() - startTime;
+            System.out.println("Stopped!!! - by closing Window in " + timeTaken + "ms  -  " + Thread.currentThread().getName() );
         } catch( InterruptedException e ) {
             e.printStackTrace();
         }

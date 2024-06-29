@@ -6,6 +6,13 @@ import java.awt.*;
 import javax.swing.*;
 
 
+/**
+ *
+ * # 1
+ *
+ * This is a simple example of a Java Swing application that displays a frame
+ * with a panel that displays the current frame rate.
+ */
 public class HelloWorldApp extends JFrame {
 
     private final FrameRate frameRate;
@@ -32,7 +39,7 @@ public class HelloWorldApp extends JFrame {
         public void paint( Graphics g ) {
             super.paint( g );
             onPaint( g );
-            System.out.println(count++ );
+            ///System.out.println(count++ );
             // g = null; -- no effect
         }
     }
@@ -46,6 +53,7 @@ public class HelloWorldApp extends JFrame {
 
     public static void main( String[] args ) {
         final HelloWorldApp app = new HelloWorldApp();
-        SwingUtilities.invokeLater(() -> app.createAndShowGUI());
+        SwingUtilities.invokeLater(app::createAndShowGUI);
+        //SwingUtilities.invokeLater(() -> app.createAndShowGUI());
     }
 }
