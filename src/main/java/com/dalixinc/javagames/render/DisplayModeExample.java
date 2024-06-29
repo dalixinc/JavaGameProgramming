@@ -36,6 +36,8 @@ public class DisplayModeExample extends JFrame {
     }
 
     private JComboBox displayModes;
+    GraphicsDevice[] gds;
+    private JList displayList;
     private GraphicsDevice graphicsDevice;
     private DisplayMode currentDisplayMode;
 
@@ -43,6 +45,15 @@ public class DisplayModeExample extends JFrame {
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         graphicsDevice = ge.getDefaultScreenDevice();
         currentDisplayMode = graphicsDevice.getDisplayMode();
+
+        DefaultListModel dlm = new DefaultListModel();
+        displayList = new JList( dlm );
+        displayList.setVisibleRowCount( 10 );
+        displayList.setSelectionMode( ListSelectionModel.SINGLE_SELECTION);
+        gds = ge.getScreenDevices();
+        for (GraphicsDevice device : gds) {
+            dlm.addElement(device.getIDstring());
+        }
     }
 
     private JPanel getMainPanel() {
@@ -63,6 +74,8 @@ public class DisplayModeExample extends JFrame {
             }
         });
         p.add( exitButton );
+        p.add( displayList );
+
         return p;
     }
 
@@ -90,6 +103,7 @@ public class DisplayModeExample extends JFrame {
     }
 
     protected void onEnterFullScreen() {
+        graphicsDevice = gds[displayList.getSelectedIndex()];
         if( graphicsDevice.isFullScreenSupported() ) {
             DisplayMode newMode = getSelectedMode();
             graphicsDevice.setFullScreenWindow( this );
@@ -98,6 +112,7 @@ public class DisplayModeExample extends JFrame {
     }
 
     protected void onExitFullScreen() {
+        graphicsDevice = gds[displayList.getSelectedIndex()];
         graphicsDevice.setDisplayMode( currentDisplayMode );
         graphicsDevice.setFullScreenWindow( null );
     }
